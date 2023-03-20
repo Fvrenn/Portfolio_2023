@@ -1,0 +1,36 @@
+@font-face {font-family: "Reclamo";src: url("ressources/font/Reclamo/Reclamo-Light.woff2") format('woff2');font-weight: light;}@font-face {font-family: "Reclamo";src: url("ressources/font/Reclamo/Reclamo-Medium.woff2") format('woff2');font-weight: medium;}@font-face {font-family: "Reclamo";src: url("ressources/font/Reclamo/Reclamo-Regular.woff2") format('woff2');font-weight: 400;}@font-face {font-family: "Reclamo";src: url("ressources/font/Reclamo/Reclamo-SemiBold.woff2") format('woff2');font-weight: 600;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white-color: white;
+    --green-color: #D5FF40;
+}
+a{
+    text-decoration: none;
+}
+a:visited { 
+    color: #fff; 
+   }
+
+ul{
+    list-style-type: none;  
+}
+
+body{
+    background-color: #0b0b0b;
+}
+.nav-bar{
+    margin-top: 20px;
+}
+.nav{
+    font-family: "Reclamo";
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    color: var(--white-color);
+}
