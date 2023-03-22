@@ -63,6 +63,8 @@ body {
     justify-content: space-around;
     font-size: 40px;
     color: var(--white-color);
+    padding-bottom: 10px;
+    border-bottom: solid #fff 3px;
 }
 
 /* ACCEUIL  */
@@ -79,26 +81,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -80px;
+    border-bottom: solid #fff 3px;
 }
 
 #txt-nom {
     font-family: 'Reclamo';
     font-style: normal;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 70px;
+   
+}
+#profession{
+    width: 500px;
+
 }
 
 #photo {
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #Accueil{
-    margin: -100px;
+    /* margin: -100px; */
 }
 @media only screen and (max-width: 767px) {
-    #page-acceuil {
+    #container {
         flex-direction: column;
     }
 }
