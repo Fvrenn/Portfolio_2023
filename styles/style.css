@@ -47,6 +47,8 @@ ul {
 
 body {
     background-color: #0b0b0b;
+    overflow-x: hidden;
+
 }
 
 /* NAV BAR  */
@@ -83,7 +85,7 @@ body {
     font-family: 'Reclamo';
     font-style: normal;
     font-weight: 600;
-    font-size: 120px;
+    font-size: 80px;
 }
 
 #photo {
@@ -92,7 +94,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+#Accueil{
+    margin: -100px;
+}
 @media only screen and (max-width: 767px) {
     #page-acceuil {
         flex-direction: column;
