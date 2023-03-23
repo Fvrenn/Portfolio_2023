@@ -21,7 +21,7 @@
     src: url("ressources/font/Reclamo/Reclamo-SemiBold.woff2") format('woff2');
     font-weight: 600;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ a {
 }
 
 a:visited {
-    color: #fff;
+    color: var(--white-color);
 }
 
 ul {
@@ -51,20 +51,29 @@ body {
 
 }
 
+h2{
+    color: var(--white-color);
+    font-family: 'Reclamo', serif;
+    text-shadow: 2px 3px 0px #D5FF40;
+    font-size: 80px;
+    margin-bottom: 104px;
+    margin-top: 30px;
+}
+
 /* NAV BAR  */
 .nav-bar {
     margin-top: 20px;
 }
 
 .nav {
-    font-family: "Reclamo";
+    font-family: "Reclamo", serif;
     font-weight: 600;
     display: flex;
     justify-content: space-around;
     font-size: 40px;
     color: var(--white-color);
     padding-bottom: 10px;
-    border-bottom: solid #fff 3px;
+    border-bottom: solid var(--white-color) 3px;
 }
 
 /* ACCEUIL  */
@@ -82,11 +91,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: -80px;
-    border-bottom: solid #fff 3px;
+    border-bottom: solid var(--white-color) 3px;
 }
 
 #txt-nom {
-    font-family: 'Reclamo';
+    font-family: 'Reclamo', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
@@ -111,4 +120,276 @@ body {
     #container {
         flex-direction: column;
     }
+}
+
+
+
+.about{
+    margin-top: 40px;
+}
+
+.case{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.div-shape{
+    position: relative;
+    padding: 40px;
+}
+.shape{
+    width: 150px;
+    position: absolute;
+}
+
+.text{
+    margin-left: 50px;
+}
+
+
+
+.text p{
+    font-family: 'Abyssinica SIL', serif;
+    color: var(--white-color);
+    font-size: 30px;
+    max-width: 900px;
+    margin-bottom: 70px;
+}
+.btn-cv {
+    font-size: 80px;
+    color: var(--white-color);
+    padding-left: 10px;
+}
+.txt-cv{
+    font-family: 'Reclamo', serif;
+    font-size: 48px;
+    border: 3px solid var(--white-color);
+    border-radius: 75.5px;
+    padding: 20px;
+    color: var(--white-color);
+}
+.cv{
+    display: flex;
+}
+
+
+/* section 3  */
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+    padding: 2rem 0 4rem;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*==================== BUTTONS ====================*/
+
+.button {
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    border-radius: 75.5px;
+    color: #FFFF;
+    padding: 1rem;
+    font-weight: var(--font-medium);
+    font-family: "Reclamo";
+}
+
+.button:hover {
+    /* background-color: #D5FF40; */
+}
+
+.button__icon {
+    font-size: 1.2rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    transition: .3s;
+
+}
+
+.button--small {
+    padding: .75rem 1rem;
+}
+
+/*==================== PORTFOLIO ====================*/
+.portfolio__container {
+    overflow: initial;
+}
+
+.portfolio__content {
+    padding: 0 1.5rem;
+}
+
+.portfolio__img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title {
+    font-size: 31px;
+    margin-bottom: .5rem;
+    font-family: 'Abyssinica SIL', serif;
+    color: white;
+}
+
+.portfolio__description {
+    margin-bottom: .75rem;
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 24px;
+    color: white;
+}
+
+.portfolio__button:hover .button__icon {
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-portfolio-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.swiper-button-prev {
+    left: -.5rem;
+}
+
+.swiper-button-next {
+    right: -.5rem;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    outline: none;
+}
+
+/* tabs main  */
+
+
+
+.tabs__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.tabs__toggle {
+    margin: 0 5px;
+    padding: 7px 25px;
+    border: 3px solid #FFFFFF;
+    border-radius: 75.5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tabs__name {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    font-family: "Reclamo";
+}
+
+
+.tabs__content {
+    display: none;
+}
+
+
+.tabs__toggle.is-active .tabs__name {
+    color: #D5FF40;
+}
+
+.tabs__content.is-active {
+    display: block;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+
+
+    .portfolio__content,
+    .project__container,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .body {
+            margin: 0;
+        }
+
+        .footer__container {
+            padding: 0 1rem;
+        }
+
+
+        .portfolio__img {
+            width: 320px;
+        }
+
+        .portfolio__content {
+            align-items: center;
+        }
+
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+
+    .portfolio__content {
+        column-gap: 5rem;
+    }
+
+    .swiper-portfolio-icon {
+        font-size: 3.5rem;
+    }
+
+    .swiper-button-prev {
+        left: 3.5rem;
+    }
+
+    .swiper-button-next {
+        right: 3.5rem;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: -4.5rem
+    }
+
 }

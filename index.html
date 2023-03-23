@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK  -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <title>Portfolio 2023</title>
 </head>
 
@@ -35,14 +36,288 @@
                 </div>
             </div>
             <div id="photo">
-                <img class="photo ac" src="/ressources/images/photo_all.png" alt="">
-                <!-- <img class="photo bg" src="/ressources/images/photo-accueil2.png" alt=""> -->
-                <!-- <img class="photo star" src="/ressources/images/photo-accueil2.png" alt=""> -->
+                <img class="photo ac" src="ressources/images/photo_all.png" alt="">
             </div>
         </div>
     </section>
 
-    <script src="app.js"></script>
+    <section class="about">
+        <div class="div-shape">
+            <img class="shape" src="ressources/images/Shape 27.png" alt="Logo">
+        </div>
+        <div class="case">
+            <div class="image">
+                <img src="ressources/images/photo-a-propos3.png" alt="Photo de vous">
+            </div>
+            <div class="text">
+                <h2>A propos</h2>
+                <p>Bonjour et bienvenue sur mon portfolio ! Je suis un étudiant passionné par le développement web et le
+                    design graphique, à la recherche d'un stage non rémunéré d'un mois à partir de fin juin. J'aime
+                    concevoir des sites web fonctionnels et esthétiques. N'hésitez pas à explorer mes projets et à me
+                    contacter si vous cherchez un stagiaire dynamique et motivé pour votre entreprise.</p>
+                   <div class="cv">
+                    <a class="txt-cv" href="your-cv.pdf" download>Télécharger CV</a>
+                    <a class="btn-cv" href="your-cv.pdf" download><ion-icon name="download-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <div class="tabs">
+        <div class="tabs__head">
+          <div class="tabs__toggle is-active">
+            <span class="tabs__name">First Tab</span>
+          </div>
+          <div class="tabs__toggle">
+            <span class="tabs__name">Second Tab</span>
+          </div>
+          <div class="tabs__toggle">
+            <span class="tabs__name">Third Tab</span>
+          </div>
+        </div>
+        <div class="tabs__body">
+          <div class="tabs__content is-active">
+            <section class="portfolio section" id="portfolio">
+
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent works</span>
+    
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Modern Website</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, 
+                            with ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 2 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Affiche concept Vald</h3>
+                        <p class="portfolio__description">C’est une affiche uqe j’ai réaliser il y maintenant 2 ans pour m’amuser.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Voire
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 3 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Online store</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, with 
+                            ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                    </div>
+    
+                <!-- add arrows-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+    
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+    
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                
+            
+            </div>
+    
+            </section>
+        </div>
+          <div class="tabs__content">
+            <section class="portfolio section" id="portfolio">
+
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent works</span>
+    
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Modern Website</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, 
+                            with ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 2 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Brand design</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, with 
+                            ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 3 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Online store</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, with 
+                            ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                    </div>
+    
+                <!-- add arrows-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+    
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+    
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                
+            
+            </div>
+    
+            </section>
+        </div>
+          <div class="tabs__content">
+            <section class="portfolio section" id="portfolio">
+
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent works</span>
+    
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Modern Website</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, 
+                            with ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 2 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Brand design</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, with 
+                            ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!--==================== PORTFOLIO 3 ====================-->
+            
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+    
+                    <div class="portfolio_">
+                        <h3 class="portfolio__title">Online store</h3>
+                        <p class="portfolio__description">Website adaptable to all devices, with 
+                            ui components and animated interactions.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                    </div>
+    
+                <!-- add arrows-->
+                <div class="swiper-button-next">
+                    <!-- <i class="uil uil-angle-right-b swiper-portfolio-icon"></i> -->
+                </div>
+    
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+    
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                
+            
+            </div>
+    
+            </section>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <!--==================== SCROLL TOP ====================-->
+  
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
 </body>
 
 </html>
