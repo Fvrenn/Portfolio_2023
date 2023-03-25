@@ -21,7 +21,7 @@
     src: url("ressources/font/Reclamo/Reclamo-SemiBold.woff2") format('woff2');
     font-weight: 600;
 }
-@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -31,10 +31,18 @@
 :root {
     --white-color: white;
     --green-color: #D5FF40;
+    --green-soft-color: #708526;
 }
 
 a {
     text-decoration: none;
+}
+hr{
+    background-color: #ffffff;
+    border: 0 none;
+    color: #ffffff;
+    height:3px;
+    margin-top: 50px;
 }
 
 a:visited {
@@ -145,11 +153,13 @@ h2{
 .text{
     margin-left: 50px;
 }
-
+.section__title{
+    margin: 70px 0 0 150px ;
+}
 
 
 .text p{
-    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Roboto Slab', serif;
     color: var(--white-color);
     font-size: 30px;
     max-width: 900px;
@@ -176,8 +186,8 @@ h2{
 /* section 3  */
 
 /*==================== REUSABLE CSS CLASSES ====================*/
-.section {
-    padding: 2rem 0 4rem;
+.portfolio {
+    margin-bottom: 100px;
 }
 
 /*==================== LAYOUT ====================*/
@@ -245,13 +255,13 @@ h2{
 .portfolio__title {
     font-size: 31px;
     margin-bottom: .5rem;
-    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Roboto Slab', serif;
     color: white;
 }
 
 .portfolio__description {
     margin-bottom: .75rem;
-    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 24px;
     color: white;
 }
@@ -263,6 +273,7 @@ h2{
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
+    display: none;
 }
 
 .swiper-portfolio-icon {
@@ -278,15 +289,22 @@ h2{
     right: -.5rem;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -2.5rem;
+}
 
-.swiper-button-prev,
-.swiper-button-next {
+
+.swiper-button-prev, 
+.swiper-button-next,
+.swiper-pagination-bullet {
     outline: none;
 }
 
 /* tabs main  */
 
-
+.tabs{
+    margin-bottom: 20px;
+}
 
 .tabs__head {
     display: flex;
@@ -326,7 +344,68 @@ h2{
 .tabs__content.is-active {
     display: block;
 }
+.swiper-pagination-bullet-active{
+    background-color: #D5FF40;
+}
 
+
+/*==================== CONTACT ====================*/
+
+.contact__container {
+    row-gap: 3rem;
+}
+
+.contact__information {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.contact__icon {
+    font-size: 1.5rem;
+    color: var(--green-color);
+    margin-right: .75rem;
+}
+
+.contact__title {
+    font-family: "Reclamo";
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contatc__subtitle{
+    font-size: .813rem;
+    color: #ffffff;
+    font-family: "Reclamo";
+}
+
+.contact__content {
+    background-color: var(--green-soft-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact__label {
+    font-size: .75rem;
+    color: #fff;
+    font-family: "Reclamo";
+}
+
+.contact__input {
+    width: 100%;
+    background-color: var(--green-soft-color);
+    color: #fff;
+    font-size: .938rem;
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+.contact .section__title{
+    margin-bottom: 50px;
+}
+
+
+/*==================== footer ====================*/
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
@@ -334,10 +413,8 @@ h2{
 /* For medium devices */
 @media screen and (min-width: 568px) {
 
-
-
     .portfolio__content,
-    .project__container,
+    .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -349,47 +426,43 @@ h2{
             margin-right: auto;
         }
 
-        .body {
-            margin: 0;
-        }
+
 
         .footer__container {
             padding: 0 1rem;
         }
-
-
         .portfolio__img {
             width: 320px;
         }
-
         .portfolio__content {
             align-items: center;
         }
+
 
     }
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-
+    .footer__container {
+        padding: 0;
+    }
+    
     .portfolio__content {
         column-gap: 5rem;
     }
-
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
 
-    .swiper-button-prev {
-        left: 3.5rem;
-    }
-
-    .swiper-button-next {
-        right: 3.5rem;
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets {
+    .swiper-container-horizontal > .swiper-pagination-bullets {
         bottom: -4.5rem
     }
 
+    .contact__form {
+        width: 460px; 
+    }
+    .contact__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
